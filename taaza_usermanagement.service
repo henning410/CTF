@@ -3,8 +3,8 @@ Description=Taaza Usermanagement
 After=network.target
 
 [Service]
-ExecStart=/home/henning/CTF/taaza_usermanagement
-WorkingDirectory=/home/henning/CTF/taaza_usermanagement
+ExecStart=/home/CTF/taaza_usermanagement
+WorkingDirectory=/home/CTF/taaza_usermanagement
 Restart=always
 RestartSec=3
 User=root
