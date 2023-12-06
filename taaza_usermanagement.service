@@ -1,13 +1,14 @@
 [Unit]
-Description=Taaza Usermanagement
+Description=Taaza Usermanagement Service
 After=network.target
 
 [Service]
-ExecStart=/home/CTF/taaza_usermanagement
-WorkingDirectory=/home/CTF/taaza_usermanagement
-Restart=always
-RestartSec=3
-User=root
+Type=simple
+User=henning
+WorkingDirectory=/home/henning
+ExecStart=/home/henning/CTF/taaza_usermanagement
+Restart=on-failure
+
 
 [Install]
 WantedBy=multi-user.target
